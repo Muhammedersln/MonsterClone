@@ -1,0 +1,22 @@
+[
+    "/UPLOAD/BANNERS/HOMEPAGE/anasayfa/slider/TemmuzKampanyasi/Web.png",
+    "/UPLOAD/BANNERS/HOMEPAGE/anasayfa/slider/HumaHaziranKampanyasi/Web-Huma-Kampanyası.png",
+    "/UPLOAD/BANNERS/HOMEPAGE/anasayfa/slider/bankaslider/2023temmuz1web.png",
+    "/UPLOAD/BANNERS/HOMEPAGE/anasayfa/slider/BonusKartKamp/Garanti_temmuz_web.jpg",
+    "/UPLOAD/BANNERS/HOMEPAGE/anasayfa/slider/13Nesil/Web-Slider-.jpg",
+    "/UPLOAD/BANNERS/HOMEPAGE/anasayfa/slider/Nvidia40Serisi/Web_Nvidia.png",
+    "/UPLOAD/BANNERS/HOMEPAGE/anasayfa/slider/AryondA24/A24_slider_500.jpg",
+    "/UPLOAD/BANNERS/HOMEPAGE/anasayfa/slider/uzatilmis_garanti/Uzatilmis_Garanti_Slider_Web2.jpg",
+    "/UPLOAD/BANNERS/HOMEPAGE/anasayfa/slider/TamamlayiciGaranti/web.png",
+    "/UPLOAD/BANNERS/HOMEPAGE/anasayfa/slider/ParcaliOdeme/Web_Slider.png",
+    "/UPLOAD/BANNERS/HOMEPAGE/anasayfa/slider/TvReklam/MicrosoftTeams-image (1).png ** ",
+    "/UPLOAD/BANNERS/HOMEPAGE/anasayfa/slider/H5Slider/Web-Slider.jpg",
+    "/UPLOAD/BANNERS/HOMEPAGE/anasayfa/slider/3dMark/3DMARK_WEB_SLIDER.jpeg",
+    "/UPLOAD/BANNERS/HOMEPAGE/anasayfa/slider/windows 11/w11.jpg **",
+    "/UPLOAD/BANNERS/HOMEPAGE/anasayfa/slider/yeni/gamepass-new/gamepassyeni1aylikweb1.jpg",
+    "/UPLOAD/BANNERS/HOMEPAGE/anasayfa/slider/BonusKamp/web.jpg",
+    "/UPLOAD/BANNERS/HOMEPAGE/anasayfa/slider/monsterekspress/Monster-Express-Yazısız.jpg",
+    "/UPLOAD/BANNERS/HOMEPAGE/anasayfa/slider/gamerpack/v2-Monster-Gamer-Pack---Web.jpg",
+    "/UPLOAD/BANNERS/HOMEPAGE/anasayfa/slider/nortonslider/Norton-yazısız.jpg",
+    "/UPLOAD/BANNERS/HOMEPAGE/anasayfa/slider/teknikservisrandevu/Randevu-Yazısız.jpg"
+]
