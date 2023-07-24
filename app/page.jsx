@@ -10,7 +10,6 @@ export default function Home() {
       <Carousel autoSlide={true}></Carousel>
       <ResponsiveCarousel autoSlide={true}></ResponsiveCarousel>
       <Banner></Banner>
-      <UserComment></UserComment>
     </div>
   );
 }
