@@ -2,7 +2,7 @@ import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 const ResponsiveBannerSlider = ({ bannerImg, bannerTitle, buttonTitle }) => {
-  const imgUrl = process.env.WEB_URL;
+  const imgUrl = "https://img-monsternotebook.mncdn.com";
   return (
     <div className="">
       <div className="bg-secondary  pt-5 pl-4 ">

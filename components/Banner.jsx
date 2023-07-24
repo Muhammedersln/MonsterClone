@@ -11,7 +11,7 @@ const Banner = () => {
   const [bannerData, setBannerData] = useState([]);
   const [visibleIcon, setVisibleICon] = useState(false);
   const [visibleVideo, setVisibleVideo] = useState(false);
-  const imgUrl = process.env.WEB_URL;
+  const imgUrl = "https://img-monsternotebook.mncdn.com";
 
   useEffect(() => {
     const getData = async () => {

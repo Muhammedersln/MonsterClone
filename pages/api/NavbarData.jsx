@@ -3,7 +3,7 @@ const NavbarData = async () => {
   const apiUrl = process.env.API_URL;
   try {
     const response = await axios.get(
-      apiUrl,
+      "https://api.monsternotebook.com/ecommerce-api/v1/category/categories",
       {
         headers: {
           "x-monster-client-channel": "MobileAppTr",

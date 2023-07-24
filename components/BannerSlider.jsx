@@ -14,7 +14,7 @@ const BannerSlider = ({
   buttonVisibile,
   link,
 }) => {
-  const imgUrl = process.env.WEB_URL;
+  const imgUrl = "https://img-monsternotebook.mncdn.com";
   const handleButtonClick = () => {
     window.location.href = link; // Sayfayı belirtilen linke yönlendir
   };
