@@ -3,7 +3,7 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: "/(.*)", // Match all pages
+        source: "https://monster-web-clone-pe6b-jksn3i5vu-muhammedersln.vercel.app", // Match all pages
         headers: [
           {
             key: "Access-Control-Allow-Origin",
