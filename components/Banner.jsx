@@ -9,6 +9,7 @@ import UserComment from "./UserComment";
 
 const Banner = () => {
 
+  
   const [bannerData, setBannerData] = useState([]);
   const [visibleIcon, setVisibleICon] = useState(false);
   const [visibleVideo, setVisibleVideo] = useState(false);

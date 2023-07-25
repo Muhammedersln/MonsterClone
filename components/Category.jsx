@@ -11,20 +11,20 @@ const Category = () => {
   const [isAccordionHovered, setIsAccordionHovered] = useState(false);
   const [title, setTitle] = useState("");
 
-  useEffect(() => {
-    const getData = async () => {
-      try {
-        const result = await NavbarData();
-        if (result) {
-          setCategories(result.data);
-        } else {
-          console.error("Veri alınamadı");
-        }
-      } catch (err) {
-        console.error(err);
+  const getData = async () => {
+    try {
+      const result = await NavbarData();
+      const currentData=result.data;
+      if (result) {
+        setCategories(currentData);
+      } else {
+        console.error("Veri alınamadı");
       }
-    };
-
+    } catch (err) {
+      console.error(err);
+    }
+  };
+  useEffect(() => {
     getData();
   }, []);
 

@@ -8,7 +8,8 @@ const NavbarData = async () => {
           "x-monster-client-channel": "MobileAppTr",
           "Cache-Control": "no-cache",
           "Ocp-Apim-Subscription-Key": "23e9ecb898a74612935b48353804506c",
-
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
         },
       }
     );
