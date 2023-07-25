@@ -38,7 +38,7 @@ const BannerSlider = ({
             </p>
 
             {buttonVisibile !== "3380_7337_29" && (
-              // <Link href={link}>
+              <Link href={link}>
                 <button
                   type="button"
                   onClick={handleButtonClick}
@@ -57,7 +57,7 @@ const BannerSlider = ({
                     />
                   </div>
                 </button>
-              // </Link>
+              </Link>
             )}
           </div>
         </div>
@@ -67,5 +67,3 @@ const BannerSlider = ({
 };
 
 export default BannerSlider;
-
-// ""

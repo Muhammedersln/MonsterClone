@@ -12,22 +12,6 @@ const Carousel = ({ autoSlide = false, autoSlideInterval = 8000 }) => {
   const [banner, setBanner] = useState([]);
   const [link, setLink] = useState([]);
   useEffect(() => {
-    const getData = async () => {
-      try {
-        const result = await BannerData();
-
-        if (result && result.data) {
-          setBanner(result.data);
-        } else {
-          console.error("No data received");
-        }
-      } catch (err) {
-        console.error(err);
-      }
-    };
-    getData();
-  }, []);
-  useEffect(() => {
     if (banner.length > 0) {
       const links = banner.flatMap((item) => {
         const linkParam = item.parameters.find((param) => param.name === "Link");
@@ -44,7 +28,22 @@ const Carousel = ({ autoSlide = false, autoSlideInterval = 8000 }) => {
   const next = () =>
     setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1));
 
- 
+  useEffect(() => {
+    const getData = async () => {
+      try {
+        const result = await BannerData();
+
+        if (result && result.data) {
+          setBanner(result.data);
+        } else {
+          console.error("No data received");
+        }
+      } catch (err) {
+        console.error(err);
+      }
+    };
+    getData();
+  }, []);
   const slides = banner.map((data, index) => (
     <Banner
       key={index}
