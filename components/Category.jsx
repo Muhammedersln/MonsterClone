@@ -12,16 +12,12 @@ const Category = () => {
   const [title, setTitle] = useState("");
 
   const getData = async () => {
-    try {
-      const result = await NavbarData();
-      const currentData=result.data;
-      if (result) {
-        setCategories(currentData);
-      } else {
-        console.error("Veri alınamadı");
-      }
-    } catch (err) {
-      console.error(err);
+    const result = await NavbarData();
+    const currentData = result.data;
+    if (result) {
+      setCategories(currentData);
+    } else {
+      console.error("Veri alınamadı");
     }
   };
   useEffect(() => {
@@ -124,13 +120,15 @@ const Category = () => {
       </div>
 
       {visible && (
-        <div 
+        <div
           onMouseEnter={() => setIsAccordionHovered(true)}
           onMouseLeave={() => setIsAccordionHovered(false)}
         >
-          
-          <ListAccordion className="" value={title} visible={visible}></ListAccordion>
-          
+          <ListAccordion
+            className=""
+            value={title}
+            visible={visible}
+          ></ListAccordion>
         </div>
       )}
     </div>
@@ -138,4 +136,3 @@ const Category = () => {
 };
 
 export default Category;
-
