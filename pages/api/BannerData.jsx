@@ -19,6 +19,8 @@ const BanerData = async () => {
           "Ocp-Apim-Subscription-Key": "23e9ecb898a74612935b48353804506c",
           "Access-Control-Allow-Origin": "*",
           "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
+          'Access-Control-Allow-Credentials':true,
+          'Content-Type': 'application/json',
           
         },
       }
