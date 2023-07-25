@@ -105,13 +105,13 @@ const Banner = () => {
             </div>
             <div className="text-yellow  text-[24px] leading-9 my-3 max-lg:flex max-lg:flex-col">
               <a
-                href=""
+                href="#"
                 className="mr-[36px] hover:underline pointer-events-auto"
               >
                 OYUN BİLGİSAYARLARI
               </a>
               <span className="border-r text-center max-lg:hidden"></span>
-              <a href="" className="ml-[36px] hover:underline max-lg:ml-0">
+              <a href="#" className="ml-[36px] hover:underline max-lg:ml-0">
                 TÜM LAPTOPLAR
               </a>
             </div>

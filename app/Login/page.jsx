@@ -68,9 +68,9 @@ const Login = () => {
             GİRİŞ YAP
           </button>
           <div className="flex  justify-between text-sm">
-            <a href="#" className="underline">
+            <Link href="#" className="underline">
               Şifremi Unuttum
-            </a>
+            </Link>
             <div className="flex mb-3 ">
               <input type="checkbox" className="me-3  " />
               <p className="underline">Beni Hatırla</p>
