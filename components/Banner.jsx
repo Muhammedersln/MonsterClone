@@ -92,7 +92,7 @@ const Banner = () => {
               MÜKEMMEL OYUN DENEYİMİ.
             </div>
             <div className="mb-4 text-[24px] max-sm:text-2xl">
-              OYUNDA KENDİNİZİ KAYBETSENİZ BİLE!
+              OYUNDA 
             </div>
             <div className="mb-4">
               <p className="text-[16px] leading-normal font-normal my-4">
