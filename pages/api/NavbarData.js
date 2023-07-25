@@ -8,7 +8,7 @@ const NavbarData = async () => {
           "x-monster-client-channel": "MobileAppTr",
           "Cache-Control": "no-cache",
           "Ocp-Apim-Subscription-Key": "23e9ecb898a74612935b48353804506c",
-          "Access-Control-Allow-Origin": "https://monster-web-clonee-git-main-muhammedersln.vercel.app"
+
         },
       }
     );
