@@ -7,7 +7,16 @@ const nextConfig = {
     
   };
 
-  module.exports = nextConfig;
+  module.exports = {
+    async rewrites() {
+      return [
+        {
+          source: '/ecommerce-api/:path*',
+          destination: 'https://api.monsternotebook.com/ecommerce-api/:path*',
+        },
+      ];
+    },
+  };
 
 /**
  * 
