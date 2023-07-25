@@ -2,7 +2,7 @@ import React from "react";
 import Carousel from "../components/Carousel";
 import ResponsiveCarousel from "../components/Responsive/ResponsiveCarousel";
 import Banner from "../components/Banner";
-
+import UserComment from "../components/UserComment";
 
 const Home = () => {
   return (
@@ -10,6 +10,7 @@ const Home = () => {
       <Carousel autoSlide={true} />
       <ResponsiveCarousel autoSlide={true} />
       <Banner />
+      <UserComment></UserComment>
     </div>
   );
 };

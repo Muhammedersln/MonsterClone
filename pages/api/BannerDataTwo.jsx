@@ -1,6 +1,5 @@
 import axios from "axios";
 const BanerData = async () => {
-  const apiUrl =process.env.API_URL_BANNER;
   try {
     const body = {
       bannerCode: 7612,
