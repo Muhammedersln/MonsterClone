@@ -8,6 +8,31 @@ import IconBack from "../assets/close.svg";
 import UserComment from "./UserComment";
 
 const Banner = () => {
+  const BanerData = async () => {
+    try {
+      const body = {
+        bannerCode: 7612,
+        productId: 0,
+        categoryId: 0,
+      };
+  
+      const response = await axios.post(
+        "https://api.monsternotebook.com/ecommerce-api/v1/banner/banner-filter",
+        body,
+        {
+          headers: {
+            "x-monster-client-channel": "MobileAppTr",
+            "Content-Type": "application/json",
+            "Cache-Control": "no-cache",
+            "Ocp-Apim-Subscription-Key": "23e9ecb898a74612935b48353804506c",
+          },
+        }
+      );
+        return response.data
+    } catch (error) {
+      console.error(error);
+    }
+  };
   const [bannerData, setBannerData] = useState([]);
   const [visibleIcon, setVisibleICon] = useState(false);
   const [visibleVideo, setVisibleVideo] = useState(false);
@@ -16,7 +41,7 @@ const Banner = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const result = await BanerDataTwo();
+        const result = await BanerData();
 
         if (result && result.data) {
           setBannerData(result.data);

@@ -8,7 +8,6 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import Link from "next/link";
 import { IoMdClose } from "react-icons/io";
 import LoginSignin from "../UI/LoginSıgnin"
-
 import Category from "./Category";
 import ResponsiveAccordion from "./Responsive/ResponsiveAccordion";
 import Logo from "../UI/Logo";
