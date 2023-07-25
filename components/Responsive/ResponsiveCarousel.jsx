@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import BannerData from "../../pages/api/BannerData";
+import BannerData from "../../pages/api/BannerData/BannerData";
 import Link from "next/link";
 import ResponsiveBannerSlider from "../Responsive/ResponsiveBannerSlider";
 

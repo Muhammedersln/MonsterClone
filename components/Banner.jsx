@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useState, useEffect } from "react";
-import BanerDataTwo from "../pages/api/BannerDataTwo";
+import BanerDataTwo from "../pages/api/BannerDataTwo/BannerDataTwo";
 import { GoPlay } from "react-icons/go";
 import Image from "next/image";
 import IconBack from "../assets/close.svg";

@@ -7,7 +7,7 @@ import { RiHomeLine } from "react-icons/ri";
 import { FaRegUser } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import NavbarData from "../../pages/api/NavbarData";
+import NavbarData from "../../pages/api/NavbarData/NavbarData";
 
 const ResponsiveNavbar = ({ visible }) => {
   const [categories, setCategories] = useState([]);
