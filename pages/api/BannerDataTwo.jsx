@@ -11,6 +11,7 @@ const BanerData = async () => {
       "https://api.monsternotebook.com/ecommerce-api/v1/banner/banner-filter",
       body,
       {
+        source: "/api/:path*",
         headers: {
           "x-monster-client-channel": "MobileAppTr",
           "Content-Type": "application/json",
