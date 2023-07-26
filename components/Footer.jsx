@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
 import { footerLinks } from "../constants";
-import Inbox from '../assets/forward_inbox.svg';
-import IconMonster from '../assets/icon_monster.svg';
-import IconArrowDown from '../assets/arrow_down.svg';
-import Support from '../assets/support.svg';
+import Inbox from "../assets/forward_inbox.svg";
+import IconMonster from "../assets/icon_monster.svg";
+import IconArrowDown from "../assets/arrow_down.svg";
+import Support from "../assets/support.svg";
 import { AiOutlineYoutube, AiOutlineTwitter } from "react-icons/ai";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { useState } from "react";
@@ -35,7 +35,7 @@ const Footer = () => {
           {" "}
           <div className=" flex justify-start h-full ">
             <div className="flex justify-center items-center  w-[48px] h-[48px] bg-bgicon">
-            <Image src={Support} alt="support"></Image>
+              <Image src={Support} alt="support"></Image>
             </div>
             <div className="bg-light flex justify-center w-full me-4 max-lg:me-0 items-center ">
               <span className="text-white w-full ps-3">0 850 255 11 11</span>
@@ -65,7 +65,7 @@ const Footer = () => {
                 <FaInstagram className="w-[24px] h-[24px] text-white"></FaInstagram>
               </li>
               <li className="flex justify-center items-center w-[48px] h-[48px] bg-bgicon">
-              <Image src={IconMonster} alt="iconMonster"></Image>
+                <Image src={IconMonster} alt="iconMonster"></Image>
               </li>
             </ul>
           </div>
@@ -178,9 +178,13 @@ const Footer = () => {
               </div>
             ) : (
               <div className="flex items-center">
-              Daha Az Göster
-              <Image src={IconArrowDown} alt="down" className="transform rotate-180" ></Image>
-            </div>
+                Daha Az Göster
+                <Image
+                  src={IconArrowDown}
+                  alt="down"
+                  className="transform rotate-180"
+                ></Image>
+              </div>
             )}
           </button>
         </div>
@@ -194,22 +198,32 @@ const Footer = () => {
           </div>
           <div className="flex max-lg:flex-wrap max-lg:justify-center ">
             <img
+              width={140}
+              height={50}
               src="https://img-monsternotebook.mncdn.com/images/frontend/footer/garanti.png"
               alt="garanti"
             />
             <img
+              width={75}
+              height={50}
               src="https://img-monsternotebook.mncdn.com/images/frontend/footer/Visa.png"
               alt="visa"
             />
             <img
+              width={47}
+              height={50}
               src="https://img-monsternotebook.mncdn.com/images/frontend/footer/Mastercard.png"
               alt="mastercard"
             />
             <img
+              width={117}
+              height={50}
               src="https://img-monsternotebook.mncdn.com/images/frontend/footer/bkm.png"
               alt="bkg"
             />
             <img
+              width={70}
+              height={50}
               src="https://img-monsternotebook.mncdn.com/images/frontend/footer/comodo.png"
               alt="comodo"
             />

@@ -10,7 +10,7 @@ const Home = () => {
       <Carousel autoSlide={true} />
       <ResponsiveCarousel autoSlide={true} />
       <Banner />
-      <UserComment></UserComment>
+      {/* <UserComment></UserComment> */}
     </div>
   );
 };

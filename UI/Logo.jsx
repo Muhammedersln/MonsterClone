@@ -5,7 +5,8 @@ const Logo = () => {
   return (
     <Link href={"/"} aria-label="Anasayfaya git">
       <img
-        style={{ height: "66px" }}
+        width={250}
+        height={55}
         className=""
         src="https://www.monsternotebook.com.tr/images/frontend/monster-logo.svg"
         alt="Monster Notebook Logo"

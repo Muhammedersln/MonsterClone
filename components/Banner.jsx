@@ -186,9 +186,12 @@ const Banner = () => {
           </div>
         ) : (
           <div className="">
-            <div>
+            <div className="w-full">
               <img
-                className="w-full"
+              
+                width={1405}
+                height={595}
+                
                 src="https://img-monsternotebook.mncdn.com/UPLOAD/BANNERS/HOMEPAGE/anasayfa/Grid/reklamtv.png"
                 alt=""
               />
