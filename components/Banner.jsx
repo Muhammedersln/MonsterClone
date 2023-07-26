@@ -5,31 +5,21 @@ import BanerDataTwo from "../pages/api/BannerDataTwo/BannerDataTwo";
 import { GoPlay } from "react-icons/go";
 import Image from "next/image";
 import IconBack from "../assets/close.svg";
-import UserComment from "./UserComment";
 
 const Banner = () => {
-
-  
   const [bannerData, setBannerData] = useState([]);
   const [visibleIcon, setVisibleICon] = useState(false);
   const [visibleVideo, setVisibleVideo] = useState(false);
   const imgUrl = "https://img-monsternotebook.mncdn.com";
-
+  const getData = async () => {
+    const result = await BanerDataTwo();
+    if (result && result.data) {
+      setBannerData(result.data);
+    } else {
+      console.error("No data received");
+    }
+  };
   useEffect(() => {
-    const getData = async () => {
-      try {
-        const result = await BanerDataTwo();
-
-        if (result && result.data) {
-          setBannerData(result.data);
-        } else {
-          console.error("No data received");
-        }
-      } catch (err) {
-        console.error(err);
-      }
-    };
-
     getData();
   }, []);
 
@@ -205,10 +195,14 @@ const Banner = () => {
             </div>
             <div className="absolute bottom-10 max-lg:relative max-lg:bottom-0 max-lg:ml-0 max-lg:mt-10 max-md:mt-5 left-0 ml-[70px] border-l-2 border-primary max-lg:pl-0 pl-10 max-lg:border-none">
               <div className="text-white">
-                <p className=" text-4xl max-lg:text-2xl max-md:text-xl">Çocukların Korkmadığı</p>
+                <p className=" text-4xl max-lg:text-2xl max-md:text-xl">
+                  Çocukların Korkmadığı
+                </p>
               </div>
               <div className="text-primary mt-2">
-                <p className=" text-5xl max-lg:text-3xl max-md:text-2xl">TEK CANAVAR</p>
+                <p className=" text-5xl max-lg:text-3xl max-md:text-2xl">
+                  TEK CANAVAR
+                </p>
               </div>
               <div className="flex text-xl  mt-10 max-lg:mt-4 max-md:mt-2">
                 <div className="bg-bgicon p-4 max-lg:p-2 max-lg:p-1 text-white flex items-center justify-center text-2xl">
@@ -224,8 +218,7 @@ const Banner = () => {
         )}
       </div>
       {/* Kullanıcı Yorumu */}
-      <div className="mt-10">
-      </div>
+      <div className="mt-10"></div>
     </div>
   );
 };

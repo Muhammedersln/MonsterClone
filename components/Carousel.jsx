@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, use } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import left from "../assets/ChevronLeft.svg";
 import right from "../assets/Chevronright.svg";
@@ -11,10 +11,24 @@ const Carousel = ({ autoSlide = false, autoSlideInterval = 8000 }) => {
   const [curr, setCurr] = useState(0);
   const [banner, setBanner] = useState([]);
   const [link, setLink] = useState([]);
+  const getData = async () => {
+    const result = await BannerData();
+
+    if (result && result.data) {
+      setBanner(result.data);
+    } else {
+      console.error("No data received");
+    }
+  };
+  useEffect(() => {
+    getData();
+  }, []);
   useEffect(() => {
     if (banner.length > 0) {
       const links = banner.flatMap((item) => {
-        const linkParam = item.parameters.find((param) => param.name === "Link");
+        const linkParam = item.parameters.find(
+          (param) => param.name === "Link"
+        );
         const linkValue = linkParam ? linkParam.value : null;
         return {
           link: linkValue,
@@ -23,27 +37,13 @@ const Carousel = ({ autoSlide = false, autoSlideInterval = 8000 }) => {
       setLink(links);
     }
   }, [banner]);
+
+  
   const prev = () =>
     setCurr((curr) => (curr === 0 ? slides.length - 1 : curr - 1));
   const next = () =>
     setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1));
 
-  useEffect(() => {
-    const getData = async () => {
-      try {
-        const result = await BannerData();
-
-        if (result && result.data) {
-          setBanner(result.data);
-        } else {
-          console.error("No data received");
-        }
-      } catch (err) {
-        console.error(err);
-      }
-    };
-    getData();
-  }, []);
   const slides = banner.map((data, index) => (
     <Banner
       key={index}
@@ -90,8 +90,8 @@ const Carousel = ({ autoSlide = false, autoSlideInterval = 8000 }) => {
         >
           {slides}
         </div>
-        {link.map((item,index) => (
-            <Link href={item} key={index}>
+        {link.map((item, index) => (
+          <Link href={item} key={index}>
             <div className="absolute inset-0 flex items-center justify-between p-4 mx-10 cursor-pointer">
               <button
                 onClick={prev}
@@ -107,8 +107,7 @@ const Carousel = ({ autoSlide = false, autoSlideInterval = 8000 }) => {
               </button>
             </div>
           </Link>
-          ))}
-        
+        ))}
       </div>
       <div className="bg-secondary flex h-[80px] bottom-4 right-0 left-0">
         <div className="flex mx-auto items-center justify-center gap-3">

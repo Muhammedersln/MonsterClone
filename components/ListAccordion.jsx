@@ -9,27 +9,22 @@ const ListAccordion = ({ value, visible }) => {
   const [businessPc, setBusinessPc] = useState([]);
   const [workStation, setWorkStation] = useState([]);
   const [gamingPc, setGamingPc] = useState([]);
-
+  const getData = async () => {
+    const result = await NavbarData();
+    if (result) {
+      setCategories(result.data);
+    } else {
+      console.error("Veri alınamadı");
+    }
+  };
+  // api çekme
   useEffect(() => {
-    const getData = async () => {
-      try {
-        const result = await NavbarData();
-        if (result) {
-          setCategories(result.data);
-        } else {
-          console.error("Veri alınamadı");
-        }
-      } catch (err) {
-        console.error(err);
-      }
-    };
-
     getData();
   }, []);
-  // api çekme
 
   useEffect(() => {
     if (categories.length > 0) {
+      // Tüm Laptoplar
       const pcData = categories.flatMap((category) =>
         category.childCategories.flatMap((subCategory) =>
           subCategory.childCategories
@@ -41,11 +36,8 @@ const ListAccordion = ({ value, visible }) => {
         )
       );
       setAllPc(pcData);
-    }
-  }, [categories]);
-  // Tüm Laptoplar Api
-  useEffect(() => {
-    if (categories.length > 0) {
+
+      // Oyun Bilgisayarları
       const gamingPcData = categories
         .find((category) => category.name === "Tüm Laptoplar")
         ?.childCategories.find(
@@ -57,11 +49,8 @@ const ListAccordion = ({ value, visible }) => {
           url: item.url,
         }));
       setGamingPc(gamingPcData);
-    }
-  }, [categories]);
-  // Oyun Bilgisayarları
-  useEffect(() => {
-    if (categories.length > 0) {
+
+      // Aksesuarlar
       const accessoryData = categories
         .find((category) => category.name === "Aksesuarlar")
         ?.childCategories.map((subCategory) => {
@@ -71,11 +60,8 @@ const ListAccordion = ({ value, visible }) => {
           }));
         });
       setAccessory(accessoryData);
-    }
-  }, [categories]);
-  // Aksesuarlar
-  useEffect(() => {
-    if (categories.length > 0) {
+
+      // Gaming Monitörs
       const gamingMonitorData = categories
         .find((category) => category.name === "Aksesuarlar")
         ?.childCategories.find(
@@ -90,11 +76,8 @@ const ListAccordion = ({ value, visible }) => {
           url: item.url,
         }));
       setgamingMonitor(gamingMonitorData);
-    }
-  }, [categories]);
-  // Gaming Monitörs
-  useEffect(() => {
-    if (categories.length > 0) {
+
+      // İş Bilgisayarları
       const businessPcData = categories
         .find((category) => category.name === "Tüm Laptoplar")
         ?.childCategories.find(
@@ -106,11 +89,8 @@ const ListAccordion = ({ value, visible }) => {
           url: item.url,
         }));
       setBusinessPc(businessPcData);
-    }
-  }, [categories]);
-  // İş Bilgisayarları
-  useEffect(() => {
-    if (categories.length > 0) {
+
+      // İş İstasyonları
       const workStationData = categories
         .find((category) => category.name === "Tüm Laptoplar")
         ?.childCategories.find(
@@ -124,10 +104,7 @@ const ListAccordion = ({ value, visible }) => {
       setWorkStation(workStationData);
     }
   }, [categories]);
-  // İş İstasyonları
-  // console.log(allPc);
-  // console.log(categories);
-  //
+
   const renderContentList = (items) => {
     return (
       <div className="flex justify-center   ">
@@ -243,9 +220,7 @@ const ListAccordion = ({ value, visible }) => {
       content = null;
   }
 
-  return visible &&(
-    <div className="">{content}</div>
-  ) ;
+  return visible && <div className="">{content}</div>;
 };
 
 export default ListAccordion;

@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import Navbar from "../../components/Navbar";
 const Login = () => {
   const [wrong, setWrong] = useState(false);
   const [mail, setMail] = useState("");

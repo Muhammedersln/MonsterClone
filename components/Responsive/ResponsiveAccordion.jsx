@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Logo from "../../UI/Logo";
-import { IoMdClose } from "react-icons/io";
 import { AiOutlineRight } from "react-icons/ai";
 import { RiHomeLine } from "react-icons/ri";
 import { FaRegUser } from "react-icons/fa";
@@ -12,36 +11,26 @@ import NavbarData from "../../pages/api/NavbarData/NavbarData";
 const ResponsiveNavbar = ({ visible }) => {
   const [categories, setCategories] = useState([]);
   const [menuOpen, setMenuOpen] = useState(visible);
-
-  const [link, setLink] = useState([
+  const getData = async () => {
+    const result = await NavbarData();
+    if (result) {
+      setCategories(result.data);
+    } else {
+      console.error("Veri alınamadı");
+    }
+  };
+  useEffect(() => {
+    getData();
+  }, []);
+  const link = [
     "0 850 255 11 11",
     "MESAJ GÖNDER",
     "MAĞAZALAR",
     "RANDEVU SİSTEMİ",
     "TEKNİK SERVİS",
     "ÇÖZÜM MERKEZİ",
-  ]);
-  useEffect(() => {
-    const getData = async () => {
-      try {
-        const result = await NavbarData();
-        if (result) {
-          setCategories(result.data);
-        } else {
-          console.error("Veri alınamadı");
-        }
-      } catch (err) {
-        console.error(err);
-      }
-    };
+  ];
 
-    getData();
-  }, []);
-  const handleToggleMenu = () => {
-    setMenuOpen(!visible);
-  };
-  
-// slide-in-from-left
   return (
     <div className="sticky-navigation overflow-auto  ">
       <div

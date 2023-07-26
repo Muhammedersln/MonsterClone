@@ -7,7 +7,6 @@ import IconSearch from "../assets/search.svg";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Link from "next/link";
 import { IoMdClose } from "react-icons/io";
-import LoginSignin from "../UI/LoginSıgnin"
 import Category from "./Category";
 import ResponsiveAccordion from "./Responsive/ResponsiveAccordion";
 import Logo from "../UI/Logo";
@@ -24,13 +23,9 @@ const Navbar = () => {
     "ÖMÜR BOYU BAKIM",
   ]);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [userOpen, setUserOpen] = useState(false);
 
   const handleToggleMenu = () => {
     setMenuOpen(!menuOpen);
-  };
-  const handleToggleUser = () => {
-    setUserOpen(!userOpen);
   };
   const handleResize = () => {
     if (window.innerWidth > 960) {
@@ -45,16 +40,11 @@ const Navbar = () => {
     }
   }, [menuOpen]);
   useEffect(() => {
-    // Add event listener for window resize
     window.addEventListener("resize", handleResize);
-
-    // Clean up the event listener when the component is unmounted
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  // animate-wiggle animate-infinite animate-duration-500 animate-ease-out animate-reverse
-  // console.log(menuOpen);
 
   const [fixedCategories, setFixedCategories] = useState(false);
 
@@ -146,7 +136,7 @@ const Navbar = () => {
                   Harici Ödeme
                 </button>
               </div>
-              <div onClick={handleToggleUser} className="border-bordercolor border ">
+              <div  className="border-bordercolor border ">
                 <Link href="../Login" passHref>
                   <div className="flex items-center justify-between max-xl:px-2 p-1 px-5  max-lg:border-none  border-secondary text-white max-lg:hidden">
                     <div className="flex items-center max-xl:justify-center">

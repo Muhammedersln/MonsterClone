@@ -24,13 +24,6 @@ const UserComment = () => {
         
         <UserCommentCard></UserCommentCard>
         <UserCommentCard></UserCommentCard>
-        <UserCommentCard></UserCommentCard>
-        <UserCommentCard></UserCommentCard>
-        <UserCommentCard></UserCommentCard>
-        <UserCommentCard></UserCommentCard>
-        <UserCommentCard></UserCommentCard>
-        <UserCommentCard></UserCommentCard>
-        <UserCommentCard></UserCommentCard>
       </div>
       <div className="flex mb-5 h-[80px] bottom-4 right-0 left-0">
         <div className="flex mx-auto items-center justify-center gap-3">
