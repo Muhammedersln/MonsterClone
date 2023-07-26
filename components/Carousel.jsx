@@ -38,7 +38,6 @@ const Carousel = ({ autoSlide = false, autoSlideInterval = 8000 }) => {
     }
   }, [banner]);
 
-  
   const prev = () =>
     setCurr((curr) => (curr === 0 ? slides.length - 1 : curr - 1));
   const next = () =>
@@ -118,6 +117,7 @@ const Carousel = ({ autoSlide = false, autoSlideInterval = 8000 }) => {
                 className={`transition-all w-4 h-4 border-2 border-[#3d3e3f] ${
                   curr === i ? "bg-primary border-primary" : "bg-secondary"
                 }`}
+                aria-label={`Sayfa ${i + 1}`} // Türkçe: "Sayfa 1", "Sayfa 2", vb.
               ></button>
             </div>
           ))}

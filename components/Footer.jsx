@@ -195,23 +195,23 @@ const Footer = () => {
           <div className="flex max-lg:flex-wrap max-lg:justify-center ">
             <img
               src="https://img-monsternotebook.mncdn.com/images/frontend/footer/garanti.png"
-              alt=""
+              alt="garanti"
             />
             <img
               src="https://img-monsternotebook.mncdn.com/images/frontend/footer/Visa.png"
-              alt=""
+              alt="visa"
             />
             <img
               src="https://img-monsternotebook.mncdn.com/images/frontend/footer/Mastercard.png"
-              alt=""
+              alt="mastercard"
             />
             <img
               src="https://img-monsternotebook.mncdn.com/images/frontend/footer/bkm.png"
-              alt=""
+              alt="bkg"
             />
             <img
               src="https://img-monsternotebook.mncdn.com/images/frontend/footer/comodo.png"
-              alt=""
+              alt="comodo"
             />
           </div>
         </div>

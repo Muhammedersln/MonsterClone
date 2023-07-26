@@ -3,18 +3,14 @@ import Link from "next/link";
 import lo from "../assets/logo.svg";
 const Logo = () => {
   return (
-    
-      <Link href={"/"}>
+    <Link href={"/"} aria-label="Anasayfaya git">
       <img
-       style={{height:"66px"}}
+        style={{ height: "66px" }}
         className=""
         src="https://www.monsternotebook.com.tr/images/frontend/monster-logo.svg"
-        alt=""
+        alt="Monster Notebook Logo"
       />
-      {/* <Image src={lo} alt="logo"  height={"1000px"}></Image> */}
-      </Link>
-      
-    
+    </Link>
   );
 };
 

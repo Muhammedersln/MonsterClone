@@ -69,7 +69,7 @@ const Banner = () => {
         <div className=" ">
           <div className="hidden max-xl:inline-block  ">
             <img
-              className="img max-w-full h-auto"
+              className=""
               src="https://img-monsternotebook.mncdn.com/UPLOAD/BANNERS/HOMEPAGE/anasayfa/Grid/2.png"
               alt=""
             />
@@ -169,7 +169,7 @@ const Banner = () => {
           </div>
         )}
         {visibleVideo ? (
-          <div className="w-screen relative">
+          <div className="w-full relative">
             <iframe
               src="https://www.youtube.com/embed/0cu23VMqiuk"
               title="YouTube video player"
@@ -188,7 +188,7 @@ const Banner = () => {
           <div className="">
             <div>
               <img
-                className="w-screen"
+                className=""
                 src="https://img-monsternotebook.mncdn.com/UPLOAD/BANNERS/HOMEPAGE/anasayfa/Grid/reklamtv.png"
                 alt=""
               />

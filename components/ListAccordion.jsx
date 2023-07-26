@@ -16,11 +16,12 @@ const ListAccordion = ({ value, visible }) => {
     } else {
       console.error("Veri alınamadı");
     }
-  };
-  // api çekme
+  }; 
+   // api çekme
   useEffect(() => {
     getData();
   }, []);
+
 
   useEffect(() => {
     if (categories.length > 0) {
