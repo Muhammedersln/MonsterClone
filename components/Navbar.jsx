@@ -119,7 +119,7 @@ const Navbar = () => {
               <input
                 type="text"
                 placeholder="Arama Yap"
-                className="border bg-secondary focus:ring-2 focus:ring-primary focus:outline-none appearance-none  w-[85%] border-light flex-1 max-lg:w-full text-black py-[9px] px-[15px] pr-10 border-1"
+                className="border bg-secondary focus:ring-2 focus:ring-primary focus:outline-none appearance-none  w-[85%] border-light flex-1 max-lg:w-full text-white py-[9px] px-[15px] pr-10 border-1"
               />
               <Image
               alt="search"
