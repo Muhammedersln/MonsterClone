@@ -69,7 +69,8 @@ const Banner = () => {
         <div className=" ">
           <div className="hidden max-xl:inline-block  ">
             <img
-              className="w-full"
+              width={1130}
+              height={460}
               src="https://img-monsternotebook.mncdn.com/UPLOAD/BANNERS/HOMEPAGE/anasayfa/Grid/2.png"
               alt=""
             />
@@ -188,8 +189,9 @@ const Banner = () => {
           <div className="">
             <div className="w-full">
               <img
+              className=""
               
-                width={1405}
+                width={2400}
                 height={595}
                 
                 src="https://img-monsternotebook.mncdn.com/UPLOAD/BANNERS/HOMEPAGE/anasayfa/Grid/reklamtv.png"
