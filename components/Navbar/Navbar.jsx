@@ -1,15 +1,15 @@
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import IconPerson from "../assets/account_person.svg";
-import IconShoping from "../assets/shopping_cart.svg";
-import IconSearch from "../assets/search.svg";
+import IconPerson from "../../assets/account_person.svg";
+import IconShoping from "../../assets/shopping_cart.svg";
+import IconSearch from "../../assets/search.svg";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Link from "next/link";
 import { IoMdClose } from "react-icons/io";
 import Category from "./Category";
-import ResponsiveAccordion from "./Responsive/ResponsiveAccordion";
-import Logo from "../UI/Logo";
+import ResponsiveAccordion from "../Responsive/ResponsiveAccordion";
+import Logo from "../../UI/Logo";
 
 const Navbar = () => {
   const [link, setLink] = useState([

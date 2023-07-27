@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
-import { footerLinks } from "../constants";
-import Inbox from "../assets/forward_inbox.svg";
-import IconMonster from "../assets/icon_monster.svg";
-import IconArrowDown from "../assets/arrow_down.svg";
-import Support from "../assets/support.svg";
+import { footerLinks } from "../../constants";
+import Inbox from "../../assets/forward_inbox.svg";
+import IconMonster from "../../assets/icon_monster.svg";
+import IconArrowDown from "../../assets/arrow_down.svg";
+import Support from "../../assets/support.svg";
 import { AiOutlineYoutube, AiOutlineTwitter } from "react-icons/ai";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { useState } from "react";

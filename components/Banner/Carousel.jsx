@@ -1,9 +1,9 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import left from "../assets/ChevronLeft.svg";
-import right from "../assets/Chevronright.svg";
-import BannerData from "../pages/api/BannerData/BannerData";
+import left from "../../assets/ChevronLeft.svg";
+import right from "../../assets/Chevronright.svg";
+import BannerData from "../../pages/api/BannerData/BannerData";
 import Link from "next/link";
 import Banner from "./BannerSlider";
 

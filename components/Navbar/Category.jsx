@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import NavbarData from "../pages/api/NavbarData/NavbarData";
+import NavbarData from "../../pages/api/NavbarData/NavbarData";
 import ListAccordion from "./ListAccordion";
 
 const Category = () => {
