@@ -15,7 +15,7 @@ export default async function handler(req, res) {
         "x-monster-client-channel": "MobileAppTr",
         "Content-Type": "application/json",
         "Cache-Control": "no-cache",
-        "Ocp-Apim-Subscription-Key": "23e9ecb898a74612935b48353804506c",
+        "Ocp-Apim-Subscription-Key": "key",
       },
     });
 

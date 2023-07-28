@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import NavbarData from "../pages/api/NavbarData/NavbarData";
+import NavbarData from "../../pages/api/NavbarData/NavbarData";
 
 const ListAccordion = ({ value, visible }) => {
   const [categories, setCategories] = useState([]);

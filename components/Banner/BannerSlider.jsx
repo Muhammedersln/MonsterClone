@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import arrow from "../assets/ArrowRight.svg";
+import arrow from "../../assets/ArrowRight.svg";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -67,6 +67,3 @@ const BannerSlider = ({
 };
 
 export default BannerSlider;
-
-
-
